@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Community Event Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#registrationForm">Register</a></li>
+        <li><a href="#feedbackSection">Feedback</a></li>
+        <li><a href="#videoInvite">Video</a></li>
+        <li><a href="#preferences">Preferences</a></li>
+        <li><a href="#geolocation">Find Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <table class="event-gallery">
+        <caption>Featured Events</caption>
+        <tr>
+          <td>
+            <figure>
+              <img src="images/art.jpg" alt="Art Workshop" class="event-image">
+              <figcaption>Art Workshop</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <img src="images/music.jpg" alt="Live Music" class="event-image">
+              <figcaption>Live Music Night</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <img src="images/yoga.jpg" alt="Yoga Session" class="event-image">
+              <figcaption>Morning Yoga</figcaption>
+            </figure>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <figure>
+              <img src="images/fair.jpg" alt="Local Fair" class="event-image">
+              <figcaption>Local Fair</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <img src="images/tech.png" alt="Tech Meetup" class="event-image">
+              <figcaption>Tech Meetup</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <img src="images/gardening.jpg" alt="Gardening Workshop" class="event-image">
+              <figcaption>Gardening Workshop</figcaption>
+            </figure>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <form id="registrationForm">
+      <h3>Register for an Event</h3>
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" required>
+
+      <label for="event">Select Event:</label>
+      <select id="event" required>
+        <option value="">-- Choose an Event --</option>
+        <option>Art Workshop</option>
+        <option>Live Music Night</option>
+        <option>Morning Yoga</option>
+        <option>Local Fair</option>
+        <option>Tech Meetup</option>
+        <option>Gardening Workshop</option>
+      </select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="message">Additional Message (optional):</label>
+      <textarea id="message" placeholder="Anything we should know?"></textarea>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+
+    <section id="feedbackSection">
+      <h3>Leave Your Feedback</h3>
+      <textarea placeholder="Your comments here..."></textarea>
+      <p>We value your suggestions!</p>
+    </section>
+
+    <section id="videoInvite">
+      <h3>Event Invitation Video</h3>
+      <video id="promoVideo" controls>
+        <source src="media/invite.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section id="preferences">
+      <h3>Choose Your Preferences</h3>
+      <label for="category">Interested In:</label>
+      <select id="category">
+        <option>Workshops</option>
+        <option>Music</option>
+        <option>Fitness</option>
+        <option>Technology</option>
+        <option>Outdoor</option>
+      </select>
+      <button onclick="alert('Preferences saved!')">Save Preferences</button>
+    </section>
+
+    <section id="geolocation">
+      <h3>Find Nearby Events</h3>
+      <button id="findEventsBtn">Get My Location</button>
+      <div id="geoOutput"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="contactEmail">Email:</label>
+        <input type="email" id="contactEmail" required>
+
+        <label for="messageBox">Message:</label>
+        <textarea id="messageBox" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Local Community Events. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

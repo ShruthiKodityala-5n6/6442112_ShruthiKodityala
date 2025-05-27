@@ -1,0 +1,308 @@
+/* General resets and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #333;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Main sections styling */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Event Gallery Table */
+.event-gallery {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.event-gallery caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.event-gallery td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.event-image {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+figcaption {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Registration Form */
+form#registrationForm {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form#registrationForm h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form#registrationForm label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+form#registrationForm input[type="text"],
+form#registrationForm input[type="email"],
+form#registrationForm input[type="date"],
+form#registrationForm select,
+form#registrationForm textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+form#registrationForm input[type="text"]:focus,
+form#registrationForm input[type="email"]:focus,
+form#registrationForm input[type="date"]:focus,
+form#registrationForm select:focus,
+form#registrationForm textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit Button */
+form#registrationForm button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form#registrationForm button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Feedback Section */
+#feedbackSection {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+  background-color: #fff3cd;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+#feedbackSection textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+#feedbackSection p {
+  font-style: italic;
+  color: #856404;
+}
+
+/* Video Section */
+#videoInvite {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+
+#videoInvite video {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Preferences Section */
+#preferences {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  background: #e9ecef;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#preferences select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+#preferences button {
+  padding: 10px 18px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#preferences button:hover {
+  background-color: #1e7e34;
+}
+
+/* Geolocation Section */
+#geolocation {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#geolocation button {
+  padding: 12px 25px;
+  border: none;
+  background-color: #17a2b8;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#geolocation button:hover {
+  background-color: #117a8b;
+}
+
+#geoOutput {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Contact Section */
+#contact {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+#contact form button {
+  background-color: #dc3545;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+  background-color: #a71d2a;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #333;
+  color: #fff;
+  border-radius: 0 0 8px 8px;
+  margin-top: 40px;
+}
